@@ -235,7 +235,7 @@ header nav a, footer .content-wrap .copyright, footer .content-wrap a, .about-lo
 header {
   height: 200px;
   max-width: 960px;
-  background: url(../img/Renmin-University-of-China-logo-logotype.png) center center;
+  background: url(../img/image-bg.png) center center;
   background-size: cover;
   margin: 0 auto;
   float: none; }
