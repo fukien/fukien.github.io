@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Wentao Huang</title>
   <meta charset="utf-8">
@@ -18,7 +19,6 @@
         <a href="http://fukien.github.io#education">Education</a>
         <a href="http://fukien.github.io#contact">Contact</a>
     </nav>
-
 </header>
 
 <section>
@@ -38,7 +38,9 @@
   
   <ol class="internshipexperience">    
     <li>
-      <span id="adsc" onclick="doClick()">Advanced Digital Science Center, Singapore,    Junior Research Assistant,    Jul. 2018 - Oct. 2018 </span>
+      <adsc>
+        <span id="adsc" onclick="doClick()">Advanced Digital Science Center, Singapore,    Junior Research Assistant,    Jul. 2018 - Oct. 2018 </span>
+      </adsc>
     </li>
     
     <li>
@@ -109,4 +111,13 @@
 
 </script>
 </body>
+
+<style>
+  adsc { color:black; transition:0.5s; }
+  adsc:hover { 
+    color:blue; 
+    text-decoration:underline;
+  }
+</style>
+
 </html>
