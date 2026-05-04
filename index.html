@@ -1,11 +1,495 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)https://themes.gohugo.io//theme/aafu/ -->
 
-<!DOCTYPEhtml>
-<html>
-     <head>
-          <metacharset="UTF-8">
-          <meta http-equiv="refresh" content="0.1;url=https://comp.nus.edu.sg/~huang">
-          <title></title>
-     </head>
-     <body>
-     </body>
+<html lang="en-us">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Wentao Huang</title>
+		<link rel="shortcut icon" type="image/jpg" href=./assets/img/nus-favicon.jpg>
+		<meta name="theme-color" content="rgb(248, 249, 250)">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<meta name="description" content="Website title">
+		<meta name="author" content="Darshan Baral">
+		<meta name="generator" content="aafu theme by Darshan in Hugo 0.72.0">
+
+		<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./assets/css/aafu_light.css">
+		<link rel="stylesheet" href="./assets/css/aafu.css">
+
+		<script>
+			var themeColor = document.querySelector("meta[name=theme-color]");
+			window.onload = () => {
+				themeColor.content = getComputedStyle(document.body)["background-color"];
+				let defaultActivePanel = document.querySelector(".accordion.active");
+				if (defaultActivePanel) {
+					defaultActivePanel.nextElementSibling.style.maxHeight =
+					defaultActivePanel.nextElementSibling.scrollHeight + "px";
+				}
+			};
+			window.onresize = () => {
+				let defaultActivePanel = document.querySelector(".accordion.active");
+				if (defaultActivePanel) {
+					defaultActivePanel.nextElementSibling.style.maxHeight =
+					defaultActivePanel.nextElementSibling.scrollHeight + "px";
+				}
+			};
+		</script>
+	</head>
+
+	<body class="container" data-gr-c-s-loaded="true">
+		<main style="min-height: calc(100vh - 60px);">
+			<!-- 
+				<div class="d-flex flex-row row p-2">
+					<h3 class="main-menu mr-3">
+						<a href="https://themes.gohugo.io//theme/aafu/">HOME</a>
+					</h3>
+					<h3 class="main-menu mr-3">
+						<a href="https://themes.gohugo.io//theme/aafu/blog"></a>
+					</h3>
+				</div> 
+			-->
+			<div class="d-flex flex-row row p-5"></div>
+			<div class="ml-auto mr-auto row row-eq-height rounded">
+				<div class="col-md-5 text-center p-2 mt-1">
+					<div class="profile-area rounded text-center position-relative shadow">
+						<div class="d-flex justify-content-center pt-2">
+							<div class="w-100 h-100">
+								<img class="rounded rounded-circle mt-4" src="./assets/img/profile.jpg" alt="Darshan Baral" style="width: 95%; max-width: 300px;">
+							</div>
+						</div>
+						<div class="p-2">
+							<h1 class="mb-0">Wentao Huang</h1>
+							<h4 class="mb-0">PhD Candidate</h4>
+							<h4 class="mb-0">National University of Singapore</h4>
+
+							<div class="mt-4 d-flex flex-wrap justify-content-center">
+								<!-- <div class="mt-2 d-flex flex-wrap justify-content-center"> -->
+								<!-- 
+									<div style="height:45px; width:45px;">
+									<a href="https://www.linkedin.com/in/wentao-huang-2781b48b/">
+										<i class="zoomlink mt-1 fab fa-linkedin-in"></i>
+									</a>
+									</div>
+									<div style="height:45px; width:45px;">
+										<a href="https://github.com/fukien">
+											<i class="zoomlink mt-1 fab fa-github"></i>
+										</a>
+									</div>
+									<div style="height:45px; width:45px;">
+										<a href="https://twitter.com/fujianluoyuan">
+											<i class="zoomlink mt-1 fab fa-twitter"></i>
+										</a>
+									</div>
+									<div style="height:45px; width:45px;">
+										<a href="">
+											<i class="zoomlink mt-1 ai ai-google-scholar"></i>
+										</a>
+									</div> 
+								-->
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-7 pt-2 mt-3">
+
+					<h2 class="accordion  active ">
+						<span onclick="expandAccordion(this)" style="cursor: pointer;">
+							About
+						</span>
+					</h2>
+					<div class="panel overflow-hidden" style="max-height: 88px;">
+						<p class="markdownify">
+							My name is Wentao Huang (<strong>Chinese: 黄文韬</strong>). I am a final-year PhD candidate in the <a href="https://www.comp.nus.edu.sg/">School of Computing, National University of Singapore</a>, working under the supervision of <a href="https://www.comp.nus.edu.sg/~tankl/">Prof. Kian-Lee Tan</a> and collaborating closely with <a href="https://www.comp.nus.edu.sg/~hebs/">Prof. Bingsheng He</a>.
+							<br/><br/>
+							My research explores the art of <strong>data management</strong> through the lens of hardware-software co-design. I specialize in building high-performance data systems that fully exploit modern and emerging hardware (e.g., CXL, HBM). Broadly, my interests lie at the intersection of database systems, machine learning systems (MLSys), and high-performance computing.
+						</p>
+						<p>
+							<a href="https://scholar.google.com/citations?user=DdLy-x0AAAAJ">[Google Scholar]</a>
+							<a href="https://dblp.uni-trier.de/pid/35/1495-1.html">[DBLP]</a>
+							<a href="https://github.com/fukien">[GitHub]</a>
+							<a href="https://twitter.com/fujianluoyuan">[Twitter]</a>
+							<a href="https://discuss.systems/@wentao">[Mastodon]</a>
+							<a href="./assets/pdf/huangwentao_cv.pdf">[CV]</a>
+						</p>
+					</div>
+
+
+
+
+					<h2 class="accordion">
+						<span onclick="expandAccordion(this)" style="cursor: pointer;">
+							Experience
+						</span>
+					</h2>
+
+					<div class="panel overflow-hidden">
+						<h3 style="font-size: 1.1rem; margin-top: 10px; border-bottom: 1px solid #eee; padding-bottom: 5px;">
+							<strong>Education</strong>
+						</h3>
+						
+						<dl>
+							<dt>Ph.D. in Computer Science</dt>
+							<dd class="mb-0 ml-3">
+								Aug. 2020 - Present, 
+								<a href="https://nus.edu.sg/" target="_blank" rel="noopener noreferrer">National University of Singapore</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>M.Phil. in Computer Science</dt>
+							<dd class="mb-0 ml-3">
+								Sep. 2017 - Jun. 2020, 
+								<a href="https://www.ruc.edu.cn/" target="_blank" rel="noopener noreferrer">Renmin University of China</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>B.S. in Electronic Engineering</dt>
+							<dd class="mb-0 ml-3">
+								Sep. 2013 - Jun. 2017, 
+								<a href="https://www.sdu.edu.cn/" target="_blank" rel="noopener noreferrer">Shandong University</a>
+							</dd>
+						</dl>
+
+						<h3 style="font-size: 1.1rem; margin-top: 25px; border-bottom: 1px solid #eee; padding-bottom: 5px;">
+							<strong>Internships</strong>
+						</h3>
+						
+						<dl>
+							<dt>Research Engineer (Intern)</dt>
+							<dd class="mb-0 ml-3">
+								Jul. 2018 - Feb. 2019, 
+								<a href="https://illinois-arcs.edu.sg/" target="_blank" rel="noopener noreferrer">Illinois Advanced Research Center at Singapore</a>
+							</dd>
+						</dl>
+					</div>
+
+
+					<!--
+					<h2 class="accordion ">
+						<span onclick="expandAccordion(this)" style="cursor: pointer;">
+							Education
+						</span>
+					</h2>
+					<div class="panel overflow-hidden">
+						<dl>
+							<dt>Ph.D. in Computer Science</dt>
+							<dd class="mb-0 ml-3">
+								Aug. 2020 - Present, 
+								<a href="https://nus.edu.sg/" target="_blank" rel="noopener noreferrer">
+									National University of Singapore
+								</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>M.Phil. in Computer Science</dt>
+							<dd class="mb-0 ml-3">
+								Sep. 2017 - Jun. 2020, 
+								<a href="https://www.ruc.edu.cn/" target="_blank" rel="noopener noreferrer">
+									Renmin University of China
+								</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>B.S. in Electronic Engineering</dt>
+							<dd class="mb-0 ml-3">
+								Sep. 2013 - Jun. 2017, 
+								<a href="https://www.sdu.edu.cn/" target="_blank" rel="noopener noreferrer">
+									Shandong University
+								</a>
+							</dd>
+						</dl>
+					</div>
+					-->
+
+
+					<!--
+					<h2 class="accordion ">
+						<span onclick="expandAccordion(this)" style="cursor: pointer;">
+							Experiences
+						</span>
+					</h2>
+					<div class="panel overflow-hidden">
+						<dl>
+							<dt class="mb-0">Research Engineer</dt>
+							<dd class="mb-0 ml-3">
+									Jul. 2018 - Feb. 2019, 
+									<a href="https://illinois-arcs.edu.sg/" target="_blank" rel="noopener noreferrer">
+										Illinois Advanced Research Center at Singapore
+									</a>
+							</dd>
+						</dl>
+					</div>
+					-->
+
+
+					<h2 class="accordion ">
+						<span onclick="expandAccordion(this)" style="cursor: pointer;">
+							Publications
+						</span>
+					</h2>
+
+
+					<div class="panel overflow-hidden">
+
+						<p>
+							<strong>Wentao Huang</strong>, Mian Lu, Kian-Lee Tan.
+							<em> Hash Joins Meet CXL: A Fresh Look.</em> <br/>
+							16th Conference on Innovative Data Systems Research <strong>(CIDR)</strong>, 2026.<br/>
+							<a href="https://vldb.org/cidrdb/papers/2026/p1-huang.pdf">[Paper]</a>
+							<a href="https://github.com/fukien/hashjoins-meet-cxl">[Code]</a>
+							<a href="./assets/works/CIDR-2026/hashjoins-meet-cxl/Huang-2.pdf">[Slides]</a>
+						</p>
+
+						<p>
+							<strong>Wentao Huang</strong>, Mo Sha, Mian Lu, Yuqiang Chen, Bingsheng He, Kian-Lee Tan.
+							<em> Bandwidth Expansion via CXL: A Pathway to Accelerating In-Memory Analytical Processing.</em>
+							15th International Workshop on Accelerating Analytics and Data Management Systems Using Modern Processor and Storage Architectures <strong>(ADMS)</strong>, 2024.<br/>
+							<a href="https://vldb.org/workshops/2024/proceedings/ADMS/ADMS24_01.pdf">[Paper]</a>
+							<a href="https://github.com/fukien/type3-pathway">[Code]</a>
+							<a href="./assets/works/ADMS-2024/cxl-pathway/adms24-slides.pdf">[Slides]</a>
+							<a href="https://zhuanlan.zhihu.com/p/10863132263">[中文博客]</a>
+						</p>
+
+						<p>
+							Yunhong Ji, <strong>Wentao Huang</strong>, Xuan Zhou.
+							<em>HeterMM: applying in-DRAM index to heterogeneous memory-based key-value stores.</em>
+							Frontiers of Computer Science <strong>(FCS)</strong>, 18(4): 184612, 2024.<br/>
+							<a href="https://link.springer.com/article/10.1007/s11704-024-3713-0">[Paper]</a>
+						</p>
+
+
+						<p>
+							Yunhong Ji, <strong>Wentao Huang</strong>, Xuan Zhou, Bingsheng He, Kian-Lee Tan.
+							<em>TaC: An Anti-Caching Key-Value Store on Heterogeneous Memory Architectures.</em>
+							27th International Conference on Extending Database Technology <strong>(EDBT)</strong>, 2024.<br/>
+							<a href="https://openproceedings.org/2024/conf/edbt/paper-121.pdf">[Paper]</a>
+							<a href="https://github.com/jyh-violet/Anti-caching-Memcached">[Code]</a>
+							<a href="./assets/works/EDBT-2024/TaC/tac-slides.pdf">[Slides]</a>
+						</p>
+
+						<p>
+							<strong>Wentao Huang</strong>, Yunhong Ji, Xuan Zhou, Bingsheng He, Kian-Lee Tan.
+							<em>A Design Space Exploration and Evaluation for Main-Memory Hash Joins in Storage Class Memory.</em>
+							49th International Conference on Very Large Data Bases <strong>(VLDB)</strong>, 2023.<br/>
+							<a href="https://www.vldb.org/pvldb/volumes/16/paper/A%20Design%20Space%20Exploration%20and%20Evaluation%20for%20Main-Memory%20Hash%20Joins%20in%20Storage%20Class%20Memory">[Paper]</a>
+							<a href="./assets/works/VLDB-2023/hashjoin-scm/main-tr.pdf">[Technical Report]</a>
+							<a href="https://github.com/fukien/hashjoin-scm">[Code]</a>
+							<a href="./assets/works/VLDB-2023/hashjoin-scm/p1249-huang-slides.pdf">[Slides]</a>
+							<a href="https://youtu.be/z09yNA5ks28">[Video]</a>
+						</p>
+
+						<p>
+							<strong>Wentao Huang</strong>, Yuchen Li, Yuan Fang, Ju Fan, Hongxia Yang.
+							<em>BiANE: Bipartite Attributed Network Embedding.</em>
+							43rd International ACM SIGIR Conference on Research and Development in Information Retrieval (<strong>SIGIR</strong>), 2020.<br/>
+							<a href="https://dl.acm.org/doi/10.1145/3397271.3401068">[Paper]</a>
+							<a href="./assets/works/SIGIR-2020/BiANE/fp0038-supplementary.pdf">[Supplementary]</a>
+							<a href="https://github.com/fukien/BiANE">[Code]</a>
+							<a href="./assets/works/SIGIR-2020/BiANE/fp0038-slides.pdf">[Slides]</a>
+							<a href="https://www.youtube.com/watch?v=X5KRvzdje0Q">[Video]</a>
+							<a href="https://developer.aliyun.com/article/771578">[中文解读]</a>
+							<!-- <a href="https://mp.weixin.qq.com/s/OJq4cYAbmUnTNP_snMBsSw">[中文博客]</a> -->
+						</p>
+
+					</div>
+
+
+					<h2 class="accordion ">
+						<span onclick="expandAccordion(this)" style="cursor: pointer;">
+							Projects
+						</span>
+					</h2>
+					<div class="panel overflow-hidden">
+						<dl>
+							<dt>	
+								<a href="https://singa.apache.org/" style="font-variant: small-caps; ">Apache SINGA</a>
+							</dt>
+							<dd class="mb-0 ml-3 markdownify"> Architected the generative adversarial networks (GANs) module for Apache SINGA, a top-level open-source library designed for scalable, distributed deep learning across heterogeneous hardware backends, with specialized optimizations for healthcare-centric AI workloads. </dd>
+						</dl>
+					</div>
+
+
+					<!--
+					<h2 class="accordion ">
+						<span onclick="expandAccordion(this)" style="cursor: pointer;">
+							Talks
+						</span>
+					</h2>
+					<div class="panel overflow-hidden">
+						<dl>
+							<dt class="mb-0">Accelerating Data-Intensive Systems with Emerging Large-Scale Memories</dt>
+							<dd class="mb-0 ml-3">Shanghai Innovation Institute, Dec. 2025</dd>
+						</dl>
+						<dl>
+							<dt class="mb-0">Efficient Analytical Query Processing with Emerging Large-Scale Memory Technologies</dt>
+							<dd class="mb-0 ml-3">Beihang University, Dec. 2025</dd>
+						</dl>
+					</div>
+					-->
+
+
+					<!--
+					<h2 class="accordion ">
+						<span onclick="expandAccordion(this)" style="cursor: pointer;">
+							Services
+						</span>
+					</h2>
+					<div class="panel overflow-hidden">
+						<dl>
+							<dt class="mb-0">Shadow Program Committee Member</dt>
+							<dt class="mb-0 ml-3">VLDB'26.</dd>
+							<dt class="mb-0">Student Area Search Committee</dt>
+							<dt class="mb-0 ml-3">NUS SoC, 2025-2026.</dd>
+							<dt class="mb-0">Program Committee Member</dt>
+							<dt class="mb-0 ml-3">ADMS’25, DL4C@NeurIPS’25.</dd>
+							<dt class="mb-0">Research Session Deputy Chair</dt>
+							<dd class="mb-0 ml-3">EDBT'24.</dd>
+							<dt class="mb-0">Invited Reviewer</dt>
+							<dd class="mb-0 ml-3">ISCAS'24.</dd>
+							<dt class="mb-0">Artifact Evaluation Committee</dt>
+							<dd class="mb-0 ml-3"> SOSP'23, OSDI'23, USENIX ATC'23, EuroSys'23.</dd>
+						</dl>
+					</div>
+					-->
+
+
+					<!--
+					<h2 class="accordion ">
+						<span onclick="expandAccordion(this)" style="cursor: pointer;">
+							Teaching
+						</span>
+					</h2>
+					<div class="panel overflow-hidden">
+						<dl>
+							<dt class="mb-0">CS3223: Database Systems Implementation</dt>
+							<dd class="mb-0 ml-3">Teaching Assistant, National University of Singapore, Spring 2021 - Spring 2022</dd>
+						</dl>
+						<dl>
+							<dt class="mb-0">Linear Algebra</dt>
+							<dd class="mb-0 ml-3">Teaching Assistant, Renmin University of China, Spring 2019</dd>
+						</dl>
+						<dl>
+							<dt class="mb-0">Introduction to Computer Science</dt>
+							<dd class="mb-0 ml-3">Teaching Assistant, Renmin University of China, Spring 2018</dd>
+						</dl>
+					</div>
+					-->
+
+
+
+
+
+
+
+					<!--
+						<h2 class="accordion ">
+							<span onclick="expandAccordion(this)" style="cursor: pointer;">
+								Skills
+							</span>
+						</h2>
+						<div class="panel overflow-hidden" id="skill-panel">
+							<script>
+								let skillPanel = document.querySelector("#skill-panel").previousElementSibling;
+								skillPanel.addEventListener("click", function() {
+									let skillBars = document.querySelectorAll("#skill-percent");
+									skillBars.forEach(elem => {
+										elem.style.width = elem.classList[0];
+									});
+								});
+							</script>
+							<code>Skill 1, Skill 2</code>
+							<div class="w-100 skillbar mt-1 mb-3">
+								<div id="skill-percent" class="90%" style="width: 0;"></div>
+							</div>
+							<code>Skill 3</code>
+							<div class="w-100 skillbar mt-1 mb-3">
+								<div id="skill-percent" class="80%" style="width: 0;"></div>
+							</div>
+							<code>Skill 4</code>
+							<div class="w-100 skillbar mt-1 mb-3">
+								<div id="skill-percent" class="50%" style="width: 0;"></div>
+							</div>
+						</div>
+
+						<h2 class="accordion ">
+							<span onclick="expandAccordion(this)" style="cursor: pointer;">
+								Hobbies
+							</span>
+						</h2>
+						<div class="panel overflow-hidden">
+							<ul class="pl-0">
+								<li class="list-unstyled mb-2">History</li>
+								<li class="list-unstyled mb-2">Literature</li>
+
+								<li class="list-unstyled mb-2">Music</li>
+								<li class="list-unstyled mb-2">Photography</li>
+								<li class="list-unstyled mb-2">Reading</li>
+								<li class="list-unstyled mb-2">Sports</li>
+
+								<li class="list-unstyled mb-2">Scuba Diving</li>
+								<li class="list-unstyled mb-2">Soccer</li>
+								<li class="list-unstyled mb-2">Swimming</li>
+								<li class="list-unstyled mb-2">Badminton</li>
+								<li class="list-unstyled mb-2">Table Tennis</li>
+							</ul>
+						</div>
+					-->
+
+
+					<!--
+						<h2 class="accordion ">
+							<span onclick="expandAccordion(this)" style="cursor: pointer;">
+								Miscellaneous
+							</span>
+						</h2>
+						<div class="panel overflow-hidden">
+							<dl>
+								<dt class="mb-0">Some useful links</dt>
+								<dd class="mb-0 ml-3"> Deadline countdowns of some top tier computer science conferences.<br/>
+									<a href="https://fukien.github.io/deadline-countdowns">[deadline-countdowns]</a>
+								</dd>
+							</dl>
+						</div>
+					-->
+
+
+
+
+
+
+
+
+
+					<h2 class="accordion ">
+						<span onclick="expandAccordion(this)" style="cursor: pointer;">
+							Contact
+						</span>
+					</h2>
+					<div class="panel overflow-hidden">
+						<ul class="pl-0">
+							<li class="list-unstyled mb-2">Email: huangwentaochina@gmail.com</li>
+							<li class="list-unstyled mb-2">Address: COM1-01-08, 13 Computing Drive, Singapore, 117417</li>
+						</ul>
+					</div>
+					<script src="./assets/js/accordion.js"></script>
+				</div>
+			</div>
+		</main>
+	</body>
+
+
+
+
+	<!--
+		<footer class=" mt-2 mb-2 ">
+			<span class="markdownify">Webpage template borrowed from </span>
+			<span>
+				<i><a href="https://github.com/darshanbaral/aafu">aafu</a></i>
+			</span>
+		</footer>
+	-->
+
+
+
+
 </html>
