@@ -121,7 +121,8 @@ a:hover,
 }
 .about-links a[aria-label="GitHub"],
 .about-links a[aria-label="Twitter / X"],
-.about-links a[aria-label="CV"] {
+.about-links a[aria-label="CV"],
+.about-links a[aria-label="Email"] {
 	color: #000;
 }
 .about-links a[aria-label="Mastodon"] {
