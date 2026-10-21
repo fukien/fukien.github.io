@@ -140,3 +140,14 @@ a:hover,
 	width: 24px;
 	height: 24px;
 }
+
+@media (min-width: 992px) {
+	.profile-column {
+		flex: 0 0 40%;
+		max-width: 40%;
+	}
+	.content-column {
+		flex: 0 0 60%;
+		max-width: 60%;
+	}
+}

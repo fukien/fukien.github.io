@@ -14,7 +14,7 @@
 
 		<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
 		<link rel="stylesheet" href="./assets/css/aafu_light.css">
-		<link rel="stylesheet" href="./assets/css/aafu.css?v=20261021">
+		<link rel="stylesheet" href="./assets/css/aafu.css?v=20261021-2">
 
 		<script>
 			var themeColor = document.querySelector("meta[name=theme-color]");
@@ -50,7 +50,7 @@
 			-->
 			<div class="d-flex flex-row row p-5"></div>
 			<div class="ml-auto mr-auto row row-eq-height rounded">
-				<div class="col-md-5 text-center p-2 mt-1">
+				<div class="col-md-5 profile-column text-center p-2 mt-1">
 					<div class="profile-area rounded text-center position-relative shadow">
 						<div class="d-flex justify-content-center pt-2">
 							<div class="w-100 h-100">
@@ -59,7 +59,7 @@
 						</div>
 						<div class="p-2">
 							<h1 class="mb-0">Wentao Huang</h1>
-							<h4 class="mb-0">PhD Candidate</h4>
+							<h4 class="mb-0">Ph.D. in Computer Science</h4>
 							<h4 class="mb-0">National University of Singapore</h4>
 
 							<p class="about-links justify-content-center mt-4">
@@ -89,7 +89,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-7 pt-2 mt-3">
+				<div class="col-md-7 content-column pt-2 mt-3">
 
 					<h2 class="accordion  active ">
 						<span onclick="expandAccordion(this)" style="cursor: pointer;">
@@ -98,9 +98,10 @@
 					</h2>
 					<div class="panel overflow-hidden" style="max-height: 88px;">
 						<p class="markdownify">
-							My name is Wentao Huang (<strong>Chinese: 黄文韬</strong>). I am a final-year PhD candidate in the <a href="https://www.comp.nus.edu.sg/">School of Computing, National University of Singapore</a>, working under the supervision of <a href="https://www.comp.nus.edu.sg/~tankl/">Prof. Kian-Lee Tan</a> and collaborating closely with <a href="https://www.comp.nus.edu.sg/~hebs/">Prof. Bingsheng He</a>.
-							<br/><br/>
-							My research explores the art of <strong>data management</strong> through the lens of hardware-software co-design. I specialize in building high-performance data systems that fully exploit modern and emerging hardware (e.g., CXL, HBM). Broadly, my interests lie at the intersection of database systems, machine learning systems (MLSys), and high-performance computing.
+							My name is Wentao Huang (<strong>Chinese: 黄文韬</strong>). I recently received my Ph.D. in Computer Science from the <a href="https://www.comp.nus.edu.sg/">National University of Singapore</a>, where I was advised by <a href="https://www.comp.nus.edu.sg/~tankl/">Prof. Kian-Lee Tan</a> and collaborated closely with <a href="https://www.comp.nus.edu.sg/~hebs/">Prof. Bingsheng He</a>. My research focuses on designing high-performance data systems through hardware–software co-design, with particular emphasis on emerging memory technologies (e.g., CXL, HBM), scheduling, and efficient data processing on modern hardware. My broader interests include data management, machine learning systems, high-performance computing, and quantum computing.
+						</p>
+						<p class="markdownify">
+							<strong>I am currently on the industry job market!</strong> Please feel free to reach out about research and engineering opportunities.
 						</p>
 					</div>
 
@@ -121,7 +122,7 @@
 						<dl>
 							<dt>Ph.D. in Computer Science</dt>
 							<dd class="mb-0 ml-3">
-								Aug. 2020 - Present, 
+								Aug. 2020 - Feb. 2026,
 								<a href="https://nus.edu.sg/" target="_blank" rel="noopener noreferrer">National University of Singapore</a>
 							</dd>
 						</dl>
@@ -148,7 +149,7 @@
 							<dt>Ph.D. Student Researcher</dt>
 							<dd class="mb-0 ml-3">
 								Aug. 2023 - Apr. 2025,
-								Phancy Group Co, Ltd, Singapore
+								<a href="https://www.phancy.ai/" target="_blank" rel="noopener noreferrer">Phancy Group Co, Ltd</a>, Singapore
 							</dd>
 						</dl>
 						<dl>
@@ -171,7 +172,7 @@
 						<dl>
 							<dt>Ph.D. in Computer Science</dt>
 							<dd class="mb-0 ml-3">
-								Aug. 2020 - Present, 
+								Aug. 2020 - Feb. 2026,
 								<a href="https://nus.edu.sg/" target="_blank" rel="noopener noreferrer">
 									National University of Singapore
 								</a>
@@ -329,26 +330,6 @@
 					-->
 
 
-					<!--
-					<h2 class="accordion ">
-						<span onclick="expandAccordion(this)" style="cursor: pointer;">
-							Talks
-						</span>
-					</h2>
-					<div class="panel overflow-hidden">
-						<dl>
-							<dt class="mb-0">Accelerating Data-Intensive Systems with Emerging Large-Scale Memories</dt>
-							<dd class="mb-0 ml-3">Shanghai Innovation Institute, Dec. 2025</dd>
-						</dl>
-						<dl>
-							<dt class="mb-0">Efficient Analytical Query Processing with Emerging Large-Scale Memory Technologies</dt>
-							<dd class="mb-0 ml-3">Beihang University, Dec. 2025</dd>
-						</dl>
-					</div>
-					-->
-
-
-					<!--
 					<h2 class="accordion ">
 						<span onclick="expandAccordion(this)" style="cursor: pointer;">
 							Services
@@ -356,21 +337,41 @@
 					</h2>
 					<div class="panel overflow-hidden">
 						<dl>
-							<dt class="mb-0">Shadow Program Committee Member</dt>
-							<dt class="mb-0 ml-3">VLDB'26.</dd>
-							<dt class="mb-0">Student Area Search Committee</dt>
-							<dt class="mb-0 ml-3">NUS SoC, 2025-2026.</dd>
-							<dt class="mb-0">Program Committee Member</dt>
-							<dt class="mb-0 ml-3">ADMS’25, DL4C@NeurIPS’25.</dd>
-							<dt class="mb-0">Research Session Deputy Chair</dt>
-							<dd class="mb-0 ml-3">EDBT'24.</dd>
+							<dt class="mb-0">Review Board / Program Committee Member</dt>
+							<dd class="mb-0 ml-3"><a href="https://www.vldb.org/2027/" target="_blank" rel="noopener noreferrer">VLDB’27</a>, <a href="https://adms-conf.org/adms_2025.html" target="_blank" rel="noopener noreferrer">ADMS’25</a>, <a href="https://dl4c.github.io/" target="_blank" rel="noopener noreferrer">DL4C@NeurIPS’25</a>.</dd>
 							<dt class="mb-0">Invited Reviewer</dt>
-							<dd class="mb-0 ml-3">ISCAS'24.</dd>
+							<dd class="mb-0 ml-3"><a href="https://link.springer.com/journal/11704" target="_blank" rel="noopener noreferrer" title="Frontiers of Computer Science">FCS’26</a>, <a href="https://link.springer.com/journal/10619" target="_blank" rel="noopener noreferrer" title="Distributed and Parallel Databases">DPD’26</a>, <a href="https://2024.ieee-iscas.org/" target="_blank" rel="noopener noreferrer">ISCAS’24</a>.</dd>
+							<dt class="mb-0">Student Area Search Committee</dt>
+							<dd class="mb-0 ml-3"><a href="https://www.comp.nus.edu.sg/" target="_blank" rel="noopener noreferrer">NUS SoC</a>, 2025–2026.</dd>
+							<dt class="mb-0">Research Session Deputy Chair</dt>
+							<dd class="mb-0 ml-3"><a href="https://dastlab.github.io/edbticdt2024/" target="_blank" rel="noopener noreferrer">EDBT'24</a>.</dd>
 							<dt class="mb-0">Artifact Evaluation Committee</dt>
-							<dd class="mb-0 ml-3"> SOSP'23, OSDI'23, USENIX ATC'23, EuroSys'23.</dd>
+							<dd class="mb-0 ml-3"><a href="https://sosp2023.mpi-sws.org/" target="_blank" rel="noopener noreferrer">SOSP’23</a>, <a href="https://www.usenix.org/conference/osdi23" target="_blank" rel="noopener noreferrer">OSDI’23</a>, <a href="https://2023.eurosys.org/" target="_blank" rel="noopener noreferrer">EuroSys’23</a>, <a href="https://www.usenix.org/conference/atc23" target="_blank" rel="noopener noreferrer">USENIX ATC’23</a>.</dd>
+							<dt class="mb-0">Shadow Program Committee Member</dt>
+							<dd class="mb-0 ml-3"><a href="https://www.vldb.org/2026/" target="_blank" rel="noopener noreferrer">VLDB’26</a>.</dd>
 						</dl>
 					</div>
-					-->
+
+
+					<h2 class="accordion ">
+						<span onclick="expandAccordion(this)" style="cursor: pointer;">
+							Talks
+						</span>
+					</h2>
+					<div class="panel overflow-hidden talks-panel">
+						<dl>
+							<dt class="mb-0">Scaling Data Infrastructure: Building Bandwidth-Intensive Systems with CXL.</dt>
+							<dd class="mb-0 ml-3"><a href="https://www.ict.cas.cn/" target="_blank" rel="noopener noreferrer">Institute of Computing Technology, Chinese Academy of Sciences</a>, Aug. 2026</dd>
+						</dl>
+						<dl>
+							<dt class="mb-0">Accelerating Data-Intensive Systems with Emerging Large-Scale Memory Technologies.</dt>
+							<dd class="mb-0 ml-3"><a href="https://www.sii.edu.cn/" target="_blank" rel="noopener noreferrer">Shanghai Innovation Institute</a>, Dec. 2025</dd>
+						</dl>
+						<dl>
+							<dt class="mb-0">Efficient Analytical Query Processing with Emerging Large-Scale Memory Technologies.</dt>
+							<dd class="mb-0 ml-3"><a href="https://www.buaa.edu.cn/" target="_blank" rel="noopener noreferrer">Beihang University</a>, Dec. 2025</dd>
+						</dl>
+					</div>
 
 
 					<!--
