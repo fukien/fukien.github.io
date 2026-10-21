@@ -113,6 +113,20 @@ a:hover,
 	height: 40px;
 	border-radius: 5px;
 }
+.about-links a[aria-label="Google Scholar"] {
+	color: #4285f4;
+}
+.about-links a[aria-label="DBLP"] {
+	color: #004f9f;
+}
+.about-links a[aria-label="GitHub"],
+.about-links a[aria-label="Twitter / X"],
+.about-links a[aria-label="CV"] {
+	color: #000;
+}
+.about-links a[aria-label="Mastodon"] {
+	color: #6364ff;
+}
 .about-links a:hover,
 .about-links a:focus-visible {
 	background-color: #e7f1ff;
