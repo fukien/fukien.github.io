@@ -49,10 +49,11 @@ def build():
     source = home.read_text()
     start, end = '<!-- BLOG PREVIEW START -->', '<!-- BLOG PREVIEW END -->'
     preview = start + '''
+<!--
 <h2 class="accordion"><span onclick="expandAccordion(this)" style="cursor: pointer;" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();expandAccordion(this)}">Blogs</span></h2>
 <div class="panel overflow-hidden"><p>Research notes on data systems, modern hardware, and research.</p><p><small>Demo: generated sample posts for testing.</small></p>'''
     preview += ''.join(f'<p><small>{p["date"]} · {esc(p["topic"])}</small><br><a href="./blog/{p["slug"]}/">{esc(p["title"])}</a></p>' for p in posts[:3])
-    preview += '<p><a href="./blog/">All ' + str(len(posts)) + ' posts →</a></p></div>\n' + end
+    preview += '<p><a href="./blog/">All ' + str(len(posts)) + ' posts →</a></p></div>\n-->\n' + end
     if start in source:
         before, rest = source.split(start, 1)
         _, after = rest.split(end, 1)
